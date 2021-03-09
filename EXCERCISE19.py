@@ -1,0 +1,30 @@
+#PROGRAM TO GET INPUT FROM USER AND THEN TAKE MIN AND MAX VALUE FROM USER , THEN PRINT THE DIVISOR
+#LIKE IF N=20 MN=2 MX=5 THEN IT SHOULD PRINT LIKE
+#2 IS THE DIVISOR OF 20 , 3 IS NOT THE DIVISOR OF 20, 4 IS THE DIVISOR OF 20 AND SO ON UPTO THE MAX RANGE
+"""
+BLUE PRINT
+FIRST WE WILL TAKE INPUT FROM USER FOR N , MN,MX
+THEN WE WILL CREATE FOR LOOP WITH I AND RANGE WILL SET FROM MN TO MX+1 AS IT WILL ALLOCATE FROM 0 TO N-1
+THEN WE WILL PRINT FROM
+"""
+print("THIS PROGRAM IS USED TO GIVE THE DIVISORS OF THE INPUT GIVEN")
+n= int(input("PLEASE ENTER YOUR NUMBER:\n"))
+mn=int(input("PLEASE ENTER THE MINIMUM RANGE:\n"))
+mx=int(input("PLEASE ENTER THE MAXIMUM RANGE:\n"))
+if mx==mn:
+    print("INVALID INPUT")
+else:
+    for i in range(mn,mx+1):
+        if n%i==0:
+            print(f"{i} is divisor of {n} and value value when divided is {n//i}")
+        else:
+            print(f"{i} is not the divisor of {n}")
+import math
+
+
+
+
+
+
+
+
